@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="827.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mangatest2.FXMLDocumentController">
+    <children>
+        <Button fx:id="btnGet" layoutX="628.0" layoutY="21.0" onAction="#handleButtonAction" text="Get Manga" />
+        <Label fx:id="label" layoutX="134.0" layoutY="171.0" minHeight="16" minWidth="69" />
+      <ImageView fx:id="imgPort" fitHeight="275.0" fitWidth="224.0" layoutX="22.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtUrl" layoutX="32.0" layoutY="21.0" prefHeight="25.0" prefWidth="589.0" promptText="url" />
+      <Label fx:id="lblTitle" alignment="TOP_LEFT" layoutX="32.0" layoutY="49.0" prefHeight="57.0" prefWidth="687.0">
+         <font>
+            <Font name="Arial Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TableView layoutX="5.0" layoutY="397.0" prefHeight="423.0" prefWidth="722.0" />
+      <Label fx:id="txaInfo" alignment="TOP_LEFT" layoutX="260.0" layoutY="112.0" prefHeight="266.0" prefWidth="454.0" wrapText="true" />
+      <TableView fx:id="TableChapters" layoutX="15.0" layoutY="407.0" prefHeight="402.0" prefWidth="701.0" />
+    </children>
+</AnchorPane>
