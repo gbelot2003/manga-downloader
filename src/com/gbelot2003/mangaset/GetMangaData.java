@@ -2,8 +2,6 @@ package com.gbelot2003.mangaset;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -19,7 +17,7 @@ public class GetMangaData {
     private String mangaTitle;
     private String mangaInfo;
     private String mangaImageInfo;
-    private ArrayList<ChapterList> listUrl = new ArrayList<>();
+    private final ArrayList<ChapterList> listUrl = new ArrayList<>();
     
     public GetMangaData(){}
     
