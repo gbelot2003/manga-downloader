@@ -6,6 +6,8 @@
 package com.gbelot2003.mangaset;
 
 import java.io.Serializable;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -21,13 +23,15 @@ public class ChapterList implements Serializable {
     private final StringProperty subTitle = new SimpleStringProperty();
     private final StringProperty subLink = new SimpleStringProperty();
     private final StringProperty date = new SimpleStringProperty();
+    private final BooleanProperty isSelected = new SimpleBooleanProperty();
 
     public ChapterList() {}
 
-    public ChapterList(String title, String url, String date){
+    public ChapterList(String title, String url, String date, boolean isSelected){
         this.subTitle.set(title);
         this.subLink.set(url);
-        this.date.set(date);
+        this.date.set(date); 
+        this.isSelected.set(isSelected);
     }
     
     public final StringProperty getSubTitleProperty() {
@@ -52,6 +56,14 @@ public class ChapterList implements Serializable {
 
     public final void setDate(String link){
         this.getDateProperty().set(link);
+    }
+    
+    public final BooleanProperty getIsSelected(){
+        return this.isSelected;
+    }
+    
+    public final void setIsSelected(Boolean isSelected){
+        this.getIsSelected().set(isSelected);
     }
     
    
